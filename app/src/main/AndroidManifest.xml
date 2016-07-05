@@ -15,8 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReservationActivity" />
-        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".ReservationActivity"
+            android:label="Request Reservation"/>
+        <activity android:name=".CalendarActivity"
+            android:label="Current Reservations"></activity>
     </application>
 
 </manifest>
