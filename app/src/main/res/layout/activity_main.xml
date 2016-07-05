@@ -8,6 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.warpgatetechnologies.junglereservation.MainActivity">
 
     <TextView
@@ -17,10 +18,9 @@
         android:text="@string/Current_Reservation"
         android:id="@+id/current_reservations_text_view"
         android:textSize="24sp"
-        android:padding="48dp"
-        android:background="@color/colorPrimary"
+        android:background="#e57373"
         android:singleLine="true"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:layout_marginBottom="8dp"
         android:textStyle="bold"/>
 
@@ -32,9 +32,8 @@
         android:textAlignment="gravity"
         android:id="@+id/request_reservation_text_view"
         android:textSize="24sp"
-        android:padding="48dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center_vertical"
+        android:background="#4DB6AC"
+        android:gravity="center"
         android:foregroundGravity="left|bottom"
         android:layout_marginBottom="8dp"
         android:textStyle="bold"/>
