@@ -1,4 +1,4 @@
-package com.warpgatetechnologies.junglereservation;
+package com.warpgatetechnologies.junglereservations;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.warpgatetechnologies.junglereservation;
+package com.warpgatetechnologies.junglereservations;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
