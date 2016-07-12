@@ -362,7 +362,7 @@ public class CalendarActivity extends Activity
                     .setMaxResults(10)
                     .setTimeMin(now)
                     .setOrderBy("startTime")
-                    .setSingleEvents(true)
+                    .setSingleEvents(false)
                     .execute();
             List<Event> items = events.getItems();
 

@@ -45,13 +45,6 @@ public class ReservationActivity extends AppCompatActivity {
         showStartDateDialogOnClick();
         showEndDateDialogOnClick();
 
-        txtemail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
         btnSendEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

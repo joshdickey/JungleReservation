@@ -1,6 +1,9 @@
 package com.warpgatetechnologies.junglereservations;
 
+import android.content.ContentUris;
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.CalendarContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         calendarTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openCalendar(view);
+                googleCalendar();
             }
         });
 
@@ -41,5 +44,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void googleCalendar() {
+        String calID = "m0n1tst1vjm9ot56jb2ajk47bg@group.calendar.google.com";
+
+//        Intent intent = new Intent(Intent.ACTION_MAIN);
+//        intent.addCategory(intent.CATEGORY_APP_CALENDAR);
+//        startActivity(intent);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(intent.CATEGORY_APP_CALENDAR);
+
+        //not sure the following is actually working
+        intent.putExtra(CalendarContract.Calendars._ID, "m0n1tst1vjm9ot56jb2ajk47bg@group.calendar.google.com");
+
+        startActivity(intent);
+    }
 
 }
