@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +10,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
     tools:context="com.warpgatetechnologies.junglereservations.MainActivity">
 
     <TextView
@@ -18,11 +19,13 @@
         android:text="@string/Current_Reservation"
         android:id="@+id/current_reservations_text_view"
         android:textSize="24sp"
-        android:background="#e57373"
+        android:background="@color/colorPrimaryDark"
         android:singleLine="true"
         android:gravity="center"
         android:layout_marginBottom="8dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:elevation="8dp"
+        android:layout_margin="8dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -32,10 +35,12 @@
         android:textAlignment="gravity"
         android:id="@+id/request_reservation_text_view"
         android:textSize="24sp"
-        android:background="#4DB6AC"
+        android:background="#F68B1F"
         android:gravity="center"
         android:foregroundGravity="left|bottom"
         android:layout_marginBottom="8dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:elevation="8dp"/>
 
 </LinearLayout>

@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.warpgatetechnologies.junglereservations.ReservationActivity">
+
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.warpgatetechnologies.junglereservations.ReservationActivity">
+    android:orientation="vertical">
 
-</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Starting Date"
+        android:gravity="center"
+        android:id="@+id/txtStartDate"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:translationZ="3dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:outlineProvider="background"
+        android:id="@+id/txtEndDate"
+        android:text="Ending Date"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:elevation="8dp"
+        android:translationZ="3dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="64dp"
+        android:text="Reservation Request Preview"
+        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
+        android:id="@+id/emailPreview"
+        android:translationZ="3dp"
+        android:elevation="8dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Send Request"
+        android:gravity="center"
+        android:id="@+id/btnEmail"
+        android:layout_gravity="center"
+        android:background="@drawable/circle"
+        android:layout_marginTop="16dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="24dp"
+        android:drawableTop="@drawable/mail_outline_black_48x48"/>
+
+</LinearLayout>
+
+</ScrollView>
