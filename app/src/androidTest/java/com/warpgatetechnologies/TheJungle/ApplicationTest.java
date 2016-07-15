@@ -1,4 +1,4 @@
-package com.warpgatetechnologies.junglereservations;
+package com.warpgatetechnologies.TheJungle;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

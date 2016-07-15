@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.warpgatetechnologies.junglereservations.ReservationActivity">
+    tools:context="com.warpgatetechnologies.TheJungle.ReservationActivity">
 
 
 <LinearLayout
@@ -27,7 +27,8 @@
         android:textStyle="bold"
         android:layout_margin="8dp"
         android:elevation="8dp"
-        android:translationZ="3dp"/>
+        android:translationZ="3dp"
+        android:drawSelectorOnTop="true"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -41,19 +42,20 @@
         android:textStyle="bold"
         android:layout_margin="8dp"
         android:elevation="8dp"
-        android:translationZ="3dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:minHeight="64dp"
-        android:text="Reservation Request Preview"
-        android:layout_marginTop="8dp"
-        android:layout_margin="8dp"
-        android:id="@+id/emailPreview"
         android:translationZ="3dp"
-        android:elevation="8dp"/>
+        android:drawSelectorOnTop="true"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:minHeight="64dp"-->
+        <!--android:text="Reservation Request Preview"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:id="@+id/emailPreview"-->
+        <!--android:translationZ="3dp"-->
+        <!--android:elevation="8dp"/>-->
 
     <Button
         android:layout_width="150dp"
@@ -66,7 +68,8 @@
         android:layout_marginTop="16dp"
         android:paddingTop="40dp"
         android:paddingBottom="24dp"
-        android:drawableTop="@drawable/mail_outline_black_48x48"/>
+        android:drawableTop="@drawable/mail_outline_black_48x48"
+        android:drawSelectorOnTop="true"/>
 
 </LinearLayout>
 
